@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semantic UI Alerts</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/semantic.min.js"></script>
+</head>
+
+<body>
+    <div class="ui large top fixed menu transition hidden">
+        <div class="ui container">
+            <a class="active item">Home</a>
+            <a class="item">Work</a>
+            <a class="item">Company</a>
+            <a class="item">Careers</a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui button">Log in</a>
+                </div>
+                <div class="item">
+                    <a class="ui primary button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui vertical inverted sidebar menu left">
+        <a class="active item">Home</a>
+        <a class="item">Work</a>
+        <a class="item">Company</a>
+        <a class="item">Careers</a>
+        <a class="item">Login</a>
+        <a class="item">Signup</a>
+    </div>
+
+    <div class="pusher" id="app">
+        <div class="ui inverted blue vertical masthead center aligned segment">
+            <div class="ui container">
+                <div class="ui menu borderless large inverted blue">
+                    <!-- <a class="item"></a> -->
+                    <div class="right item">
+                        <a class="ui inverted button">Log in</a>
+                        <a class="ui inverted button">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                    Semantic UI Alerts
+                </h1>
+                <h2>Do whatever you want when you want to.</h2>
+                <a href="" class="ui huge inverted download button">
+                    View on GitHub
+                </a>
+                <a href="" class="ui huge inverted download button">
+                    Download .zip
+                </a>
+            </div>
+        </div>
+        <div class="ui vertical stripe intro segment">
+            <div class="ui stackable very relaxed aligned grid container">
+                <!-- Row One -->
+                <div class="row">
+                    <div class="twelve wide column">
+                        <h2 class="ui dividing header">Get Started <a class="anchor" id="start"></a></h2>
+                        <h3 class="ui header">Install</h3>
+<pre>
+<code class="language-markup">
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet" <span class="attribute">type</span>=<span class="value">"text/css"</span></span><span class="attribute"> href</span>=<span class="value">"css/semantic.min.css"</span>&gt;
+    <span class="tag">&lt;<span class="title">script</span> <span class="value"><span class="attribute">type</span>=<span class="value">"text/javascript"</span></span><span class="attribute"> src</span>=<span class="value">"js/jquery-3.0.0.min.js"</span>&gt;<span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">script</span> <span class="value"><span class="attribute">type</span>=<span class="value">"text/javascript"</span></span><span class="attribute"> src</span>=<span class="value">"js/semantic.min.js"</span>&gt;<span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+    <!-- Semantic UI Alerts -->
+    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet" <span class="attribute">type</span>=<span class="value">"text/css"</span></span><span class="attribute"> href</span>=<span class="value">"dist/semantic-ui-alerts.css"</span>&gt;
+    <span class="tag">&lt;<span class="title">script</span> <span class="value"><span class="attribute">type</span>=<span class="value">"text/javascript"</span></span><span class="attribute"> src</span>=<span class="value">"dist/semantic-ui-alerts.js"</span>&gt;<span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span></span></span></span></span></span>
+</code>
+</pre>
+                    </div>
+                </div>
+                <!-- Row One -->
+                <div class="row">
+                    <div class="twelve wide column">
+                        <h3 class="ui dividing header">Demo<a class="anchor" id="Demo"></a></h3>
+                        <div class="ui form">
+                            <div class="inline fields">
+                                <div class="two wide field">
+                                    <label>Alert Type: </label>
+                                </div>
+                                <div class="fourteen wide field">
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="type" value="info" v-model="Type">
+                                            <label>Info</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="type" value="success" v-model="Type">
+                                            <label>Success</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="type" value="error" v-model="Type">
+                                            <label>Error</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="type" value="warning" v-model="Type">
+                                            <label>Warning</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="two wide field">
+                                    <label>Direction: </label>
+                                </div>
+                                <div class="fourteen wide field">
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="direction" value="top" v-model="Direction">
+                                            <label>Top</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="direction" value="bottom" v-model="Direction">
+                                            <label>Bottom</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="two wide field">
+                                    <label>Side:</label>
+                                </div>
+                                <div class="fourteen wide field">
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="side" value="right" v-model="Side">
+                                            <label>Right</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="side" value="center" v-model="Side">
+                                            <label>Center</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="radio" name="side" value="left" v-model="Side">
+                                            <label>Left</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="two wide field">
+                                    <label>Title</label>
+                                </div>
+                                <div class="fourteen wide field">
+                                    <input type="text" v-model="Title" placeholder="Alert Title">
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="two wide field">
+                                    <label>Description</label>
+                                </div>
+                                <div class="fourteen wide field">
+                                    <input type="text" v-model="Description" placeholder="Alert Description">
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="two wide field">
+                                    <label>Time</label>
+                                </div>
+                                <div class="fourteen wide field">
+                                    <input type="text" v-model="Time" placeholder="Alert Description">
+                                </div>
+                            </div>
+                            <div class="ui submit green button" @click="showAlert()">Show Alert</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve wide column">
+                        <h3 class="ui dividing header">Live Script<a class="anchor" id="Demo"></a></h3>
+<pre class="precode">
+<code class="code">
+$.suiAlert({
+    title: <span class="string">'{{ Title }}'</span>,
+    description: <span class="string">'{{ Description }}'</span>,
+    type: <span class="string">'{{ Type }}'</span>,
+    time: <span class="string">'{{ Time }}'</span>,
+    position: <span class="string">'{{ Direction+'-'+Side }}'</span>,
+});
+</code>
+</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="dist/semantic-ui-alerts.css">
+    <script src="dist/semantic-ui-alerts.js"></script>
+    <script type="text/javascript" src="js/prism.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>
