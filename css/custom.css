@@ -22,6 +22,10 @@
     padding-left: 10px;
 }
 
+.ui.form .inline.fields .field>:only-child {
+    margin: 1px 0px 7px
+}
+
 @media (max-width:320px)  { 
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     .masthead h1.ui.header {
