@@ -1,4 +1,3 @@
-
 $.suiAlert = function (permanents) {
     var options = $.extend({
         title: 'Semantic UI Alerts',
@@ -58,26 +57,31 @@ $.suiAlert = function (permanents) {
      * Close the alert
      */
     $('#alertclose').on('click', function () {
-        console.log("Close Button");
-        $(this).closest('#alert').transition(close_anim);
-        _alert.remove();
+        $(this).closest('#alert').transition({
+            animation: close_anim,
+            onComplete: function () {
+                _alert.remove();
+            }
+        });
     });
 
     var timer = 0;
     $(_alert).mouseenter(function () {
         clearTimeout(timer);
     }).mouseleave(function () {
-        // alertHide();
+        alertHide();
     });
 
-    // alertHide();
+    alertHide();
 
     function alertHide() {
         timer = setTimeout(function () {
-            _alert.animate({
-                opacity: '0',
-            }, 300, function () {
-                _alert.remove();
+            _alert.transition({
+                animation: close_anim,
+                duration: '2s',
+                onComplete: function () {
+                    _alert.remove();
+                }
             });
         }, (options.time * 1000));
     }
