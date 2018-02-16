@@ -42,13 +42,18 @@ $.suiAlert = function (permanents) {
         close_anim = "fly right";
     }
 
-    var alerts_class = "ui-alerts." + options.position;
+    // screen size check
+    var alert_size = '';
+    var screen_width = $(window).width();
+    if (screen_width < 425)
+        alert_size = 'mini';
 
+    var alerts_class = "ui-alerts." + options.position;
     if (!$('body > .' + alerts_class).length) {
         $('body').append('<div class="ui-alerts ' + options.position + '"></div>');
     }
 
-    var _alert = $('<div class="ui icon floating message ' + options.type + '" id="alert"> <i class="' + options.icon + ' icon"></i> <i class="close icon" id="alertclose"></i> <div class="content"> <div class="header">' + options.title + '</div> <p>' + options.description + '</p> </div> </div>');
+    var _alert = $('<div class="ui icon floating ' + alert_size + ' message ' + options.type + '" id="alert"> <i class="' + options.icon + ' icon"></i> <i class="close icon" id="alertclose"></i> <div class="content"> <div class="header">' + options.title + '</div> <p>' + options.description + '</p> </div> </div>');
     $('.' + alerts_class).prepend(_alert);
 
     _alert.transition('pulse');

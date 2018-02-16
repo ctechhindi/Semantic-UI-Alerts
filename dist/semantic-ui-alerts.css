@@ -49,6 +49,9 @@
 
 @media (min-width:320px)  { 
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .ui-alerts.top-center{
+        margin-left: -163px;
+    }
 }
 @media (min-width:480px)  { 
     /* smartphones, Android phones, landscape iPhone */

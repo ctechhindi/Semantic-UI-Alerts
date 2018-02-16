@@ -3,7 +3,7 @@
 A simple, beautiful, essay, semantic ui alerts library powered by
 [Semantic-UI](semantic-ui.com)
 
-[![GitHub package version](https://img.shields.io/badge/package-v1.1-blue.svg)](https://github.com/jeevan15498/Semantic-UI-Alerts/releases/tag/v1.1)
+[![GitHub package version](https://img.shields.io/badge/package-v1.2-blue.svg)](https://github.com/jeevan15498/Semantic-UI-Alerts/releases/tag/v1.2)
 [![GitHub stars](https://img.shields.io/github/stars/jeevan15498/Semantic-UI-Alerts.svg?style=flat-square)](https://github.com/jeevan15498/Semantic-UI-Alerts/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/jeevan15498/Semantic-UI-Alerts.svg?style=flat-square)](https://github.com/jeevan15498/Semantic-UI-Alerts/issues)
 [![GitHub forks](https://img.shields.io/github/forks/jeevan15498/Semantic-UI-Alerts.svg?style=flat-square)](https://github.com/jeevan15498/Semantic-UI-Alerts/network)
